@@ -210,7 +210,7 @@ export default function Home() {
   };
 
   useEffect(() => {
-    const socket = io();
+    const socket = io("https://hello-omvi.onrender.com");
     socketRef.current = socket;
 
     socket.on("connect", () => {
